@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap');
+
+.blockquote {
+    font-family: 'Unbounded', cursive;
+}
+.blockquote h1 {
+    padding-top: 0.5em;
+}
+nav {
+    font-family: 'Unbounded', cursive;
+}
+h3 {
+    background-color: black;
+    font-family: 'Unbounded', cursive;
+    font-size: 1.5em;
+}
+footer iframe {
+    padding-bottom: 0.5em;
+    height: 400px;
+}
+footer .red-social {
+    margin: 3em;
+}
+h2 {
+    font-family: 'Unbounded', cursive;
+    font-size: 1.5em;
+    padding: 1em;
+}
+form {
+    background-color: rgb(216, 160, 5);
+    padding: 1em;
+}
+form h5 {
+    font-family: 'unbounded', cursive;
+    font-size: 1em;
+    color: white;
+}
+form h6 {
+    font-family: 'unbounded', cursive;
+    font-size: 1em;
+    color: white;
+}
