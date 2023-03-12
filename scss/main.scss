@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap');
+
+.blockquote {
+    font-family: 'Unbounded', cursive;
+    h1 {
+        padding-top: 8px;
+    }
+}
+nav {
+    font-family: 'Unbounded', cursive;
+}
+.redireccion {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 350px repeat(3, 250px);
+    grid-template-areas: "box1" "box2" "box3" "box4";
+    gap: 16px;
+    justify-content: center;
+    h3 {
+        display: flex;
+        position: absolute;
+        font-size: 20px;
+        background-color: black;
+        color: white;
+    }
+}
+.box-1 {
+    grid-area: box1;
+    display: flex;
+    img {
+        width: 300px;
+        height: 350px;
+        border-radius: 8px;
+    }
+}
+.box-2 {
+    grid-area: box2;
+    display: inline-block;
+    img {
+        width: 300px;
+        height: 250px;
+        border-radius: 8px; 
+    }
+}
+.box-3 {
+    grid-area: box3;
+    display: flex;
+    img {
+        width: 300px;
+        height: 250px;
+        border-radius: 8px;
+    }
+}
+.box-4 {
+    grid-area: box4;
+    display: block;
+    img {
+        width: 300px;
+        height: 250px;
+        border-radius: 8px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .redireccion {
+      grid-template-columns: repeat(2, 370px);
+      grid-template-rows: repeat(2, 350px);
+    }
+    .box-1 {
+      justify-content: center;
+      grid-row: 1/2;
+      grid-column: 1/2;
+    }
+    .box-2 {
+      grid-row: 1/2;
+      grid-column: 2/3;
+      height: 250px;
+    }
+    .box-3 {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      justify-self: center;
+    }
+    .box-4 {
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .redireccion {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 350px);
+      justify-content: center;
+    }
+    .box-1 {
+      grid-row: 1/2;
+      grid-column: 1/2;
+      display: flex;
+    }
+    .box-2 {
+      grid-row: 1/2;
+      grid-column: 2/3;
+      display: flex
+    }
+    .box-3 {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      display: flex;
+    }
+    .box-4 {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      display: flex;
+    }
+}
+h3 {
+    background-color: black;
+    font-family: 'Unbounded', cursive;
+    font-size: 1.5em;
+}
+footer {
+    iframe {
+    padding-bottom: 0.5em;
+    height: 400px;
+    }
+    .red-social {
+        margin: 3em;
+    }
+}
+h2 {
+    font-family: 'Unbounded', cursive;
+    font-size: 1.5em;
+    padding: 1em;
+}
+form {
+    background-color: rgb(216, 140, 5);
+    padding: 1em;
+    h5 {
+        font-family: 'unbounded', cursive;
+        font-size: 1em;
+        color: white;
+    }
+    h6 {
+    font-family: 'unbounded', cursive;
+    font-size: 1em;
+    color: white;
+    }
+}
+.producto {
+    background-color: rgb(216, 140, 5);
+}
+li {
+    padding: 10px;
+}
+.card-title {
+    color: white;
+    font-family: 'unbounded', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+h5 {
+    color: white;
+    font-family: 'unbounded', cursive;
+    font-size: 16px;
+}
+.info-extra {
+    font-size: 15px;
+    text-align: end;
+}
+p {
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+    padding: 10px;
+    text-align: center;
+}
+.p1 {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.p2 {
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+.p3 {
+    text-align: left;
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+.p4 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+button {
+    border: 0;
+    background-image: linear-gradient(150deg, #9500ff, #09f, #00ddff);
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    padding: 4px;
+    cursor: pointer;
+    transition: 300ms;
+    align-items: center;
+    span {
+        background-color: black;
+        padding: 16px 24px;
+        border-radius: 6px;
+        transition: 300ms;
+    }
+    :hover {
+        span {
+            background: none;
+        }
+    }
+    :active {
+        transform: scale(0.9);
+    }
+}
+.card-img-top {
+    height: 390px;
+}
+.img-servicios {
+    height: 400px;
+    width: 600px;
+}

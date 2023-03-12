@@ -4,73 +4,180 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Pagina de prueba</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Document</title>
 </head>
-<body>
-    <header>
-        <div class="banner">
-            <h1>RODDER BREWING CO.</h1>
-            <h3>Laboratorio De Bebidas</h3>
-        </div>
+<body class="bg-dark-subtle">
+    <header class="container-fluid bg-black text-white">
+        <figure class="text-center">
+            <blockquote class="blockquote">
+                <h1>RODDER BREWING CO.</h1>
+            </blockquote>
+            <figcaption class="blockquote-footer text-white">
+                LABORATORIO DE BEBIDAS
+            </figcaption>
+        </figure>
+
         <nav>
-            <ul>
-                <li>
-                    <a href="#">Productos</a>
+            <ul class="nav justify-content-center text-decoration-none">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Productos</a>
                 </li>
-                <li>
-                    <a href="./servicios.html">Servicios</a>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./servicios.html">Servicios</a>
                 </li>
-                <li>
-                    <a href="./quienes_somos.html">Quienes somos</a>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./quienes_somos.html">Quienes somos</a>
                 </li>
-                <li>
-                    <a href="./pedidos.html">Pedidos</a>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./pedidos.html">Pedidos</a>
                 </li>
             </ul>
         </nav>
     </header>
+    <br>
     <section>
-        <div class="contenedor">
-            
-            <img src="../imagenes/botella apa.jpeg" alt="botellas de birra" class="imagen-birra">
-            
-            <div class="descripcion-productos">
-                <h2 class="nombre-producto">
-                Nombre del producto
-                </h2>
-                <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores animi sunt nemo blanditiis quaerat, voluptas velit. Modi excepturi rem ipsa est. Quasi quos mollitia harum rem deserunt. Unde, fugit nisi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus mollitia, in beatae consequatur dolorem doloribus aut dolor fugit quis, omnis soluta culpa ullam sapiente neque eveniet quae cum aliquid fuga. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat ratione nihil nostrum nemo expedita. Debitis, eaque voluptates! Nesciunt provident, ad quisquam architecto, eum dolor, totam consectetur necessitatibus quo tenetur cumque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam nihil aut odio quas, in sit voluptatum cum at, explicabo nam maiores distinctio voluptates tempore soluta porro cumque atque tempora nesciunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, delectus illo repellendus qui consectetur quod blanditiis sapiente nihil? Repellendus laudantium autem dolores consectetur sint temporibus ipsa omnis ipsam doloremque eum alias quibusdam, praesentium ad voluptas optio itaque velit. Minus corrupti, eum nemo culpa fuga alias reiciendis qui iure. Expedita animi voluptas deserunt quidem autem dicta ad tempora architecto quibusdam mollitia.
-                </p>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card mb-3">
+                    <div class="row g-0 producto">
+                      <div class="col-md-4">
+                        <img src="../imagenes/botella_de_apa.jpg" class="img-fluid rounded-start" alt="Botella de APA con etiqueta verde">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">AMERICAN PALE ALE</h5>
+                            <ul class="nav justify-content-center text-decoration-none">
+                                <li class="descripcion-producto">
+                                    <h5>COLOR</h5>
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar bg-warning w-100"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5>ALCOHOL 4.3% ABV</h5>
+                                </li>
+                                <li>
+                                    <h5>AMARGOR</h5>
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar bg-success w-75"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p class="card-text">Una cerveza americana rubia, refrescante y lupulada balanceada para ser menos amarga y de mayor tomabilidad que una IPA. En aroma predomina el lúpulo con perfiles cítricos y frutados.</p>
+                            <p class="info-extra">*Tambien disponible en barriles de 50L, 30L o 20L</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card mb-3">
+                    <div class="row g-0 producto">
+                      <div class="col-md-4">
+                        <img src="../imagenes/botella_de_aaa.jpg" class="img-fluid rounded-start" alt="Botella de AAA con etiqueta roja">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">AMERICAN AMBER ALE</h5>
+                            <ul class="nav justify-content-center text-decoration-none">
+                                <li class="descripcion-producto">
+                                    <h5>COLOR</h5>
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar bg-danger w-100"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5>ALCOHOL 5% ABV</h5>
+                                </li>
+                                <li>
+                                    <h5>AMARGOR</h5>
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar bg-success w-50"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p class="card-text">Cerveza de color ambar con maltosidad moderada, en sabor predomina el gusto a caramelo y malta. En aroma presenta nota a lúpulo en las que destaca perfiles resinosos y frutados.</p>
+                            <p class="info-extra">*Tambien disponible en barriles de 50L, 30L o 20L</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card mb-3">
+                    <div class="row g-0 producto">
+                      <div class="col-md-4">
+                        <img src="../imagenes/botella porter.jpeg" class="img-fluid rounded-start" alt="Botella de PORTER con etiqueta negra">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">PORTER</h5>
+                            <ul class="nav justify-content-center text-decoration-none">
+                                <li class="descripcion-producto">
+                                    <h5>COLOR</h5>
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar bg-dark w-100"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5>ALCOHOL 4.7% ABV</h5>
+                                </li>
+                                <li>
+                                    <h5>AMARGOR</h5>
+                                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar bg-success w-25"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <p class="card-text">Cerveza color marrón oscuro de alta tomabilidad. Predomina el sabor a malta destacandose el café, chocolate, toffe y tostado. Aroma intenso a café y chocolate.</p>
+                            <p class="info-extra">*Tambien disponible en barriles de 50L, 30L o 20L</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
             </div>
         </div>
     </section>
     <br>
-    <footer class="pie-pagina">
-        <div class="grupo-1">
-            <div class="box">
-                    <a href="../inicio.html">
-                        <img src="../imagenes/logo rodder.jpg" alt="Logo RODDER">
-                    </a>
+    <footer class="container-fluid bg-black">
+        <div class="row text-center align-items-center">
+            <div class="col-12">
+                <a href="../index.html">
+                    <img src="../imagenes/logo rodder.jpg" class="img-fluid h-25 w-25" alt="Logo RODDER">
+                </a>
             </div>
-            <span class="span">
-            <div class="box">
-                <h2>VISITANOS</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3351.5755998944073!2d-68.8092146!3d-32.8564869!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e095efe9a459b%3A0xf33d31f064891d5d!2sR%C3%B8dder%20Brewing%20Company!5e0!3m2!1ses-419!2sar!4v1675287425509!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="box">
-                <h2 class="red-social">HABLEMOS POR NUESTRAS REDES</h2>
-                <div class="red-social">
-                    <a href="https://www.facebook.com/rodderbrewingco/" target="_blank" class="fab fa-facebook"></a>
-                    <a href="https://www.instagram.com/rodderbrewingco/?hl=es" target="_blank" class="fab fa-instagram"></a>
-                    <a href="https://twitter.com/rodderbrewingco?s=20&t=O40SEBW1ZtoNOV8uQcP4yw" target="_blank" class="fab fa-twitter"></a>
-                    <a href="https://www.youtube.com/@rdderbrewingcompany9065/featured" target="_blank" class="fab fa-youtube"></a>
-                    <a href="https://www.linkedin.com/company/r%C3%B8dder-brewing-company/about/" target="_blank" class="fab fa-linkedin"></a>
+        </div>
+        <div class="row text-white">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="box text-center">
+                    <h2>VISITANOS</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3351.5755998944073!2d-68.8092146!3d-32.8564869!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e095efe9a459b%3A0xf33d31f064891d5d!2sR%C3%B8dder%20Brewing%20Company!5e0!3m2!1ses-419!2sar!4v1675287425509!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="d-block w-100"></iframe>
                 </div>
             </div>
-            </span>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="box text-center">
+                    <h2 class="titulo-social">HABLEMOS POR NUESTRAS REDES</h2>
+                    <div class="red-social">
+                        <a href="https://www.facebook.com/rodderbrewingco/" target="_blank" class="bi-facebook text-white p-4" style="font-size: 3rem" ></a>
+                        <a href="https://www.instagram.com/rodderbrewingco/?hl=es" target="_blank" class="bi-instagram text-white p-4" style="font-size: 3rem"></a>
+                        <a href="https://twitter.com/rodderbrewingco?s=20&t=O40SEBW1ZtoNOV8uQcP4yw" target="_blank" class="bi-twitter text-white p-4" style="font-size: 3rem"></a>
+                        <a href="https://www.youtube.com/@rdderbrewingcompany9065/featured" target="_blank" class="bi-youtube text-white p-4" style="font-size: 3rem"></a>
+                        <a href="https://www.linkedin.com/company/r%C3%B8dder-brewing-company/about/" target="_blank" class="bi-linkedin text-white p-4" style="font-size: 3rem"></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
